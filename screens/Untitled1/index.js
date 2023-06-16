@@ -12,9 +12,11 @@ const Landing = () => {
       <ImageBackground style={styles.igElApFU} source={require("./croc-removebg-preview.png")} resizeMode="contain"></ImageBackground>
       <Pressable onPress={() => {
       navigation.navigate("Untitled3");
-    }}><View style={styles.myIvepPx}>
-        <Text style={styles.cAyDDYop}>{"LET'S START"}</Text>
-      </View></Pressable>
+    }}>
+        <View style={styles.myIvepPx}>
+          <Text style={styles.cAyDDYop}>{"LET'S START"}</Text>
+        </View>
+      </Pressable>
     </SafeAreaView>;
 };
 
