@@ -5,13 +5,13 @@ import { StyleSheet, SafeAreaView, View, Text } from "react-native";
 
 const Untitled3 = () => {
   return <SafeAreaView style={styles.safeArea}>
-      <ImageBackground style={styles.mjndFdHf} source={require("./croc-removebg-preview.png")} resizeMode="contain"></ImageBackground>
+      
       <TextInput style={styles.VNRTMkpC} clearTextOnFocus={true} editable={true} placeholder="Username" placeholderTextColor="#ffffff" selectionColor="#090" autoFocus={true} inlineImageLeft="5"></TextInput>
-      <TextInput style={styles.VNRTMkp} clearTextOnFocus={true} editable={true} placeholder="Password" placeholderTextColor="#ffffff" selectionColor="#090" autoFocus={true}></TextInput>
+      
       <View style={styles.myIvepPx}>
-        <Text style={styles.cAyDDYop}>{"LOGIN"}</Text>
+        <Text style={styles.cAyDDYop}>{"SIGNUP"}</Text>
       </View>
-    </SafeAreaView>;
+    <ImageBackground style={styles.auiSowuU} source={require("./croc-removebg-preview.png")} resizeMode="contain"></ImageBackground></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 10,
     position: "absolute",
-    left: 54,
-    top: 314,
+    left: 64,
+    top: 169,
     color: "#fefdfd",
     shadowColor: "#000",
     shadowOffset: {
@@ -38,33 +38,6 @@ const styles = StyleSheet.create({
     shadowRadius: 7.49,
     elevation: 12,
     padding: 10
-  },
-  VNRTMkp: {
-    backgroundColor: "#090",
-    borderColor: "#cccccc",
-    width: 244,
-    height: 40,
-    borderRadius: 10,
-    position: "absolute",
-    left: 56,
-    top: 400,
-    color: "#fefdfd",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 6
-    },
-    shadowOpacity: 0.37,
-    shadowRadius: 7.49,
-    elevation: 12,
-    padding: 10
-  },
-  mjndFdHf: {
-    width: 163,
-    height: 194,
-    position: "absolute",
-    left: 95,
-    top: 80
   },
   myIvepPx: {
     width: 244,
@@ -97,6 +70,13 @@ const styles = StyleSheet.create({
     left: 73.5,
     top: 12.5,
     color: "#ffffff"
+  },
+  auiSowuU: {
+    width: 166,
+    height: 95,
+    position: "absolute",
+    left: 104,
+    top: 28
   }
 });
 export default Untitled3;
