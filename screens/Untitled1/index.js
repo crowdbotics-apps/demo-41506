@@ -10,14 +10,10 @@ const Landing = () => {
   const navigation = useNavigation();
   return <SafeAreaView style={styles.safeArea}>
       <ImageBackground style={styles.igElApFU} source={require("./croc-removebg-preview.png")} resizeMode="contain"></ImageBackground>
-      <Pressable onPress={() => {
+      
+    <Pressable onPress={() => {
       navigation.navigate("Untitled3");
-    }}>
-        <View style={styles.myIvepPx}>
-          <Text style={styles.cAyDDYop}>{"LET'S START"}</Text>
-        </View>
-      </Pressable>
-    </SafeAreaView>;
+    }}><View style={styles.iUsyULGp}><Text style={styles.waFdcGFK}>{"GET START"}</Text></View></Pressable></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -32,7 +28,7 @@ const styles = StyleSheet.create({
     left: 96.5,
     top: 190
   },
-  myIvepPx: {
+  iUsyULGp: {
     height: 40,
     width: 200,
     backgroundColor: "#090",
@@ -40,29 +36,19 @@ const styles = StyleSheet.create({
     color: "#777777",
     position: "absolute",
     left: 78,
-    top: 482,
-    borderColor: "#69cb24",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 6
-    },
-    shadowOpacity: 0.37,
-    shadowRadius: 7.49,
-    elevation: 12
+    top: 486
   },
-  cAyDDYop: {
-    width: 97,
-    height: 15,
+  waFdcGFK: {
+    width: 100,
+    height: 23,
     lineHeight: 14,
     fontSize: 16,
     borderRadius: 0,
-    fontWeight: "400",
     textAlign: "center",
     position: "absolute",
-    left: 51.5,
-    top: 12.5,
-    color: "#ffffff"
+    left: 50,
+    top: 8.5,
+    color: "#fcfcfc"
   }
 });
 export default Landing;
