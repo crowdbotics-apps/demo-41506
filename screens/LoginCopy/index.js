@@ -1,15 +1,22 @@
+import { useNavigation } from "@react-navigation/native";
+import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
 import { TextInput } from "react-native";
 import React from "react";
 import { StyleSheet, SafeAreaView, View, Text } from "react-native";
 
 const Untitled3 = () => {
+  const navigation = useNavigation();
   return <SafeAreaView style={styles.safeArea}>
       
       <TextInput style={styles.VNRTMkpC} clearTextOnFocus={true} editable={true} placeholder="Username" placeholderTextColor="#ffffff" selectionColor="#090" autoFocus={true} inlineImageLeft="5"></TextInput>
       
       <View style={styles.myIvepPx}>
-        <Text style={styles.cAyDDYop}>{"SIGNUP"}</Text>
+        <Pressable onPress={() => {
+        navigation.navigate("Untitled4", {
+          data: "data"
+        });
+      }}><Text style={styles.cAyDDYop}>{"SIGNUP"}</Text></Pressable>
       </View>
     <ImageBackground style={styles.auiSowuU} source={require("./croc-removebg-preview.png")} resizeMode="contain"></ImageBackground></SafeAreaView>;
 };
